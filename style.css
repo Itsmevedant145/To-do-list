@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Vibrant Heading */
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff4081; /* Vibrant color */
+  }
+  
+  /* Input and Add Button Styling */
+  #todo-input {
+    width: calc(100% - 100px);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #todo-input:focus {
+    border-color: #ff4081;  /* Vibrant border on focus */
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+  }
+  
+  #add-button {
+    padding: 15px 20px;
+    background-color: #24970d; /* Vibrant color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-button:hover {
+    background-color: #10753a; /* Slightly darker shade on hover */
+  }
+  
+  /* Todo List Styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #d7d7d7;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  }
+  
+  li:hover {
+    background-color: #ffe4e9; /* Slight background color change on hover */
+    transform: scale(1.03);
+  }
+  
+  button {
+    background-color: #e34d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #892d2b; /* Darker red shade on hover */
+  }
+  
+  /* Ensuring Delete Button doesn't overflow */
+  li button {
+    margin-left: 12px; /* Add space between the task and the delete button */
+  }
+  
+  /* Optional: Styling for empty input or error messages */
+  .alert {
+    color: red;
+    font-size: 14px;
+  }
+  
